@@ -1,0 +1,55 @@
+#Reviews{
+  display: none;
+  padding: 100px 0;
+  text-align: right;
+  .side-img{
+    // position: relative;
+    height: 200px;
+    width: 400px;
+    text-align: left;
+    img{
+      // position: absolute;
+      // max-width: 600px;
+      width: 100%;
+    }
+  }
+  h2{
+    height: 96px;
+  }
+  h4{
+    font-weight: 600;
+    font-size: .9rem;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+  }
+  .author{
+    font-size: .8rem;
+    color: $paragraphColor;
+    font-weight: 300;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+    strong{
+      font-weight: 700;
+      color: $black;
+    }
+  }
+  .arrows{
+    .fa-arrow-left, .fa-arrow-right{
+      font-size: 1.5rem;
+      padding: 20px 10px;
+      color: $paragraphColor;
+      cursor: pointer;
+      &.ready{
+        color: $black;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  #Reviews{
+    .col-md-8{
+      display: none;
+    }
+  }
+}
